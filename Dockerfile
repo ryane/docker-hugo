@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.5
 MAINTAINER Ryan Eschinger <ryanesc@gmail.com>
 
 ENV HUGO_VERSION=0.18.1
@@ -14,4 +14,4 @@ RUN apk add --update wget ca-certificates && \
 VOLUME /src
 WORKDIR /src
 
-CMD ["/usr/bin/hugo"]
+ENTRYPOINT ["/usr/bin/hugo"]

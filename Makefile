@@ -1,6 +1,6 @@
 VERSION ?= latest
 REPO = ryane
-IMAGE = hugo
+IMAGE = docker-hugo
 
 .PHONY: build
 
