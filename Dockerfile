@@ -1,4 +1,4 @@
-FROM debian:wheezy-slim
+FROM debian:jessie-slim
 MAINTAINER Ryan Eschinger <ryanesc@gmail.com>
 
 ENV HUGO_VERSION=0.18.1
@@ -19,4 +19,4 @@ RUN apt-get -qq update && \
 VOLUME /src
 WORKDIR /src
 
-ENTRYPOINT ["/usr/bin/hugo"]
+CMD ["/usr/bin/hugo"]
